@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Bill Amount</h1>
+        <input type="text" id="billAmount" placeholder="0.00" onkeyup="calculateBill()">
+        <h1>Tip Percentage</h1>
+        <input type="text" id="tipPercentage" placeholder="0.00" onkeyup="calculateBill()"> 
+        <div >Amount Payable per person: <div id="amount"></div> </div>
+        <button id="incrementPeople" onclick="increment()">+</button>
+        <span id="people"></span>
+        <button id="decrementPeople" onclick="decrement()">-</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
